@@ -1,0 +1,122 @@
+/*
+ * Stats component styling.
+ */
+@use './node_modules/sass-rem' as rem;
+@import "../global-includes";
+
+.stats {
+  @include container(1280px);
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  .page-lb & {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @include mq($from: small_plus) {
+      display: block;
+    }
+  }
+
+  &.has-bg-color {
+    padding-top: 110px;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+  }
+
+  @include mq($from: small_plus) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &.full-width {
+    @include container(100%);
+
+    @include mq($from: small_plus) {
+      display: block;
+    }
+  }
+
+  &__inner {
+
+    @include root-modifier('.full-width') {
+      @include container(1280px);
+    }
+
+    @include root-modifier('.has-bg-color') {
+      background-color: $white;
+      padding: 50px;
+    }
+  }
+
+  // For layout builder.
+  &__wrap {
+    @include mq($from: small_plus) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq($until: small_desktop) {
+      margin-bottom: 40px;
+    }
+
+    @include mq($from: small_plus, $until: small_desktop) {
+      width: 50%;
+    }
+
+    @include mq($from: small_desktop) {
+      width: 25%;
+    }
+  }
+
+  &__item-number {
+    h2 {
+      font-family: 'Rozha One', serif;
+      color: $charcoal;
+      font-size: rem.convert(100px);
+      letter-spacing: rem.convert(3px);
+      line-height: .9;
+      border-bottom: 2px dashed $charcoal;
+    }
+
+    &--title {
+      h2 {
+        font-size: rem.convert(60px);
+      }
+    }
+  }
+
+  &__item-desc {
+    h3 {
+      font-family: 'Noto Sans SC', sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  &__item-icon {
+    margin-top: auto;
+
+    .ion-icon {
+      font-size: rem.convert(80px);
+      color: $primary-color;
+    }
+
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  }
+
+  svg {
+    width: 200px;
+  }
+}

@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'media',
+  'has-links',
+  'media--type-' ~ media.bundle()|clean_class,
+  not media.isPublished() ? 'media--unpublished',
+  view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+] %}
+
+<figure{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+
+    {{ content.field_media_image }}
+
+    {% if content.field_caption | render %}
+      <figcaption>{{ content.field_caption | field_value }}</figcaption>
+    {% endif %}
+
+    {% if content.field_attribution | render %}
+      <div class="media__attribution">
+        <i class="ri-camera-lens-fill ri-2x"></i>
+        <p>{{ content.field_attribution | field_value }}</p>
+      </div>
+    {% endif %}
+
+  {% endif %}
+</figure>

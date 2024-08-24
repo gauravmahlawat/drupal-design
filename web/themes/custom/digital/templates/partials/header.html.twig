@@ -1,0 +1,31 @@
+{{ attach_library('digital/header') }}
+<!-- Standard page header included from page.html.twig -->
+<nav class="masthead__nav" aria-labelledby="main-navigation" id="main-navigation">
+  <div class="masthead__nav-inner">
+    <div class="masthead__container">
+
+      <div class="masthead__main">
+
+        <div class="masthead__logo">
+          <!-- Logo / Branding -->
+          {{ page.branding }}
+        </div>
+
+        <div class="masthead__nav">
+          <div class="masthead__above">
+            <div class="masthead__menu-trigger" id="menu-trigger" tabindex="0" role="button"><span>{{ 'Menu'|t }}</span></div>
+            <div class="masthead__search-trigger" id="search-trigger" tabindex="0" role="button"><span>{{ 'Search'|t }}</span></div>
+            <!-- Utility navigation -->
+            {{ page.utility }}
+          </div>
+
+          <div class="masthead__below">
+            <!-- Main navigation -->
+            {{ page.main_menu }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- // End standard page header -->

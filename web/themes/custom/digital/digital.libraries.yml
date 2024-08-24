@@ -1,0 +1,189 @@
+digital:
+  version: VERSION
+  css:
+    base:
+      build/dist/vendor/css/min/remixicon.min.css: { minified: true }
+      build/dist/css/global/base.css: { }
+      build/dist/css/global/typography.css: { }
+      build/dist/css/global/buttons-links.css: { }
+      build/dist/css/global/media.css: { }
+      build/dist/css/global/list.css: { }
+      build/dist/css/global/tables.css: { }
+      build/dist/css/global/system.css: { }
+  js:
+    build/dist/js/once.js: { minified: true, defer: true, async: true }
+    build/dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
+    build/dist/js/digital.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.dialog.ajax
+
+header:
+  css:
+    base:
+      build/dist/css/header/header.css: { }
+      build/dist/css/header/branding.css: { }
+
+footer:
+  css:
+    base:
+      build/dist/css/footer/footer.css: { }
+
+menu_widescreen:
+  css:
+    base:
+      build/dist/css/navigation/menu-widescreen.css: { }
+  js:
+    build/dist/js/jquery-meganav.js: { defer: true, async: true }
+
+menu_utility:
+  css:
+    base:
+      build/dist/css/navigation/menu-utility.css: { }
+
+pager:
+  css:
+    base:
+      build/dist/css/navigation/pager.css: { }
+
+blog_post:
+  css:
+    theme:
+      build/dist/css/content/blog-post.css: { }
+
+author:
+  css:
+    theme:
+      build/dist/css/content/author.css: { }
+
+blog_hero:
+  css:
+    theme:
+      build/dist/css/components/blog-hero.css: { }
+
+hero:
+  css:
+    theme:
+      build/dist/css/components/hero.css: { }
+
+c_text:
+  css:
+    theme:
+      build/dist/css/components/c-text.css: { }
+
+text_bg:
+  css:
+    theme:
+      build/dist/css/components/text-bg.css: { }
+
+timeline_media:
+  css:
+    theme:
+      build/dist/css/components/timeline-media.css: { }
+
+timeline_simple:
+  css:
+    theme:
+      build/dist/css/components/timeline-simple.css: { }
+
+stats:
+  css:
+    theme:
+      build/dist/css/components/stats.css: { }
+
+quote:
+  css:
+    theme:
+      build/dist/css/components/quote.css: { }
+
+view_md_icons:
+  css:
+    theme:
+      build/dist/css/views/view-md-icons.css: { }
+
+views:
+  css:
+    theme:
+      build/dist/css/views/views.css: { }
+
+share:
+  css:
+    theme:
+      build/dist/css/elements/share.css: { }
+
+form:
+  js:
+    build/dist/js/form.js: { defer: true, async: true }
+  css:
+    theme:
+      build/dist/css/elements/form.css: { }
+
+page_title:
+  css:
+    theme:
+      build/dist/css/elements/page-title.css: { }
+
+accordion:
+  css:
+    theme:
+      build/dist/css/components/accordion.css: { }
+  js:
+    build/dist/js/van11y-accessible-accordion-aria.js: { defer: true, async: true }
+
+digital_youtube_bg:
+  js:
+    build/dist/js/jquery.mb.YTPlayer.js: { defer: true, async: true }
+
+digital_vimeo_bg:
+  js:
+    build/dist/js/jquery.mb.vimeo_player.js: { defer: true, async: true }
+
+masonry:
+  js:
+    build/dist/js/imagesloaded.pkgd.js: { }
+    build/dist/js/isotope.pkgd.js: { }
+
+a11y_tabs:
+  css:
+    theme:
+      build/dist/css/components/tabs.css: { }
+  js:
+    build/dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }
+
+admin:
+  css:
+    theme:
+      build/dist/css/utility/admin-tabs.css: { }
+
+messages:
+  css:
+    theme:
+      build/dist/css/utility/messages.css: { }
+
+layout_builder_ui:
+  css:
+    theme:
+      build/dist/css/utility/layout-builder-ui.css: { }
+      build/dist/css/utility/tabledrag.css: { }
+
+layout_bricks:
+  css:
+    theme:
+      build/dist/css/layout/two-column-bricks.css: { }
+
+person_card:
+  css:
+    theme:
+      build/dist/css/components/person-card.css: { }
+
+multimedia:
+  css:
+    theme:
+       build/dist/css/components/multimedia.css: { }
+
+node_person:
+  css:
+    theme:
+      build/dist/css/content/node-person.css: { }

@@ -1,0 +1,37 @@
+name: digital
+type: theme
+description: 'A custom Drupal 9 theme'
+core_version_requirement: ^8 || ^9
+base theme: stark
+
+libraries:
+  - digital/digital
+
+regions:
+  branding: 'Branding'
+  utility: 'Utility'
+  main_menu: 'Main Navigation'
+  content_top: "Content Top"
+  help: "Help"
+  content_info: 'Content Info'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  content_bottom: 'Content Bottom'
+  footer_upper: 'Footer Upper'
+  footer_lower: 'Footer Lower'
+  footer: 'Footer'
+  off_canvas: 'Off Canvas Menu'
+  hidden: 'Hidden'
+
+ckeditor_stylesheets:
+  - dist/css/ckeditor.css
+
+## Note, see https://www.drupal.org/project/drupal/issues/2642122 and
+## https://www.drupal.org/project/drupal/issues/2642122#comment-10705712 for
+## overriding libraries that have already been overridden (which is the case for Stable.).
+libraries-override:
+  # Unset rrssb, we will theme it to our liking.
+  rrssb/main:
+    css:
+      component:
+        /libraries/rrssb-plus/css/rrssb.css: false
