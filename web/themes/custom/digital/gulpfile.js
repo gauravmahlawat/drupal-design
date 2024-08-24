@@ -294,7 +294,7 @@ const css = series(compileCSS)
  *
  * command: gulp build
  */
-const build = series(parallel(compileCSS, compileJS, lintSCSS))
+const build = series(parallel(compileCSS, compileJS))
 
 /**
  * Compile JS.

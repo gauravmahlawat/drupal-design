@@ -1,13 +1,1 @@
-/**
- * footer styling.
- */
-/* stylelint-disable */
-/* stylelint-enable */
-.footer {
-  background-color: #212121;
-  padding: 60px 0;
-}
-.footer * {
-  color: #fff;
-}
-/*# sourceMappingURL=footer.css.map */
+.footer{background-color:#212121;padding:60px 0}.footer *{color:#fff}
