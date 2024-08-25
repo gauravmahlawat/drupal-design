@@ -1,0 +1,104 @@
+/**
+ * Icon card component styling.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.icon-cards {
+  -webkit-padding-before: 3.5rem;
+  padding-block-start: 3.5rem;
+  margin-block: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.icon-cards .icon-card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 calc(33.33% - 16px);
+  flex: 1 1 calc(33.33% - 16px);
+  -webkit-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  word-wrap: break-word;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.icon-cards .icon-card:hover {
+  -webkit-box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(92, 94, 225, 0.9);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(92, 94, 225, 0.9);
+}
+.icon-cards .icon-card__wrappar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.icon-cards .icon-card__image img {
+  max-width: 100%;
+  width: 170px;
+  min-width: 170px;
+  height: auto;
+}
+.icon-cards .icon-card__body {
+  padding: 22px;
+}
+.icon-cards .icon-card__body-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #98928a;
+  margin-bottom: 8px;
+}
+.icon-cards .icon-card__body h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #000;
+  font-weight: 600;
+}
+.icon-cards .icon-card__body p {
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.icon-cards .icon-card__body .btn {
+  border: none;
+  padding-inline: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.icon-cards .icon-card__body .btn:hover {
+  background-color: unset;
+  border: none;
+  color: #6466f1;
+}
+.icon-cards .icon-card__body .btn:hover svg {
+  fill: #6466f1;
+}
+.icon-cards .icon-card__body .btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+/*# sourceMappingURL=icon-card.css.map */

@@ -1,1 +1,11 @@
-.branding__slogan{margin-bottom:6px;font-size:1.0625rem;color:#fff}
+/**
+ * Branding component styling.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.site-header img {
+  width: 11.25rem;
+  max-width: 11.25rem;
+  height: auto;
+}
+/*# sourceMappingURL=branding.css.map */

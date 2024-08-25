@@ -1,6 +1,5 @@
 @use './node_modules/sass-rem' as rem;
 @import "../global-includes";
-@import "font-face";
 
 /*
 WCAG requires that no loss of content or functionality occurs when the
@@ -23,7 +22,7 @@ body {
 
 .h1,
 h1 {
-  font-family: $font-serif;
+  font-family: $font-sans;
   font-weight: 400;
   font-size: rem.convert(54px);
   line-height: rem.convert(58px);
@@ -39,7 +38,7 @@ h1 {
 
 .h2,
 h2 {
-  font-family: $font-serif;
+  font-family: $font-sans;
   font-weight: 500;
   font-size: rem.convert(44px);
   line-height: rem.convert(48px);

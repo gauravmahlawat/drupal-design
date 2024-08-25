@@ -43,72 +43,51 @@
  * @see html.html.twig
  */
 #}
+{# page.html.twig #}
 
-{% if user_logged_in == 'true' %}
-  {{ attach_library('digital/admin') }}
-{% endif %}
+{# Header section #}
 
-{{ attach_library('digital/layout') }}
+<header role="banner">
+	<div class="container site-header">
 
-{% if page.sidebar %}
-  {% set main_grid_classes = 'col-md-9 col-lg-8' %}
-{% else %}
-  {% set main_grid_classes = 'col-sm-12' %}
-{% endif %}
+		{# Main Menu Region #}
+		{% if page.main_menu %}
+		{{ attach_library('digital/header') }}
+		<nav role="navigation" aria-label="{{ 'Main Navigation'|t }}" class="main-menu">
+			{{ page.main_menu }}
+		</nav>
+		{% endif %}
+		
+		{# User Actions Region #}
+		{% if page.user_actions %}
+		<div class="user-actions">
+			{{ page.user_actions }}
+		</div>
+		{% endif %}
+	</div>
+</header>
 
-<div class="l-container l-container--main">
+{# Main content area #}
+<main role="main" class="main-content">
+	<a id="main-content" tabindex="-1"></a> {# Skip link target for accessibility #}
 
-  <!-- Start header. -->
-  <header role="banner" class="masthead">
-    {# Header include file. #}
-    {% include '@digital/partials/header.html.twig' %}
-  </header>
+	{# Content Top Region #}
+	{% if page.content_top %}
+		<div class="content-top">
+		{{ page.content_top }}
+		</div>
+	{% endif %}
 
-  {% if page.content_top %}
-    {{ page.content_top }}
-  {% endif %}
+	{# Content Region #}
+	<div class="content">
+		{{ page.content }}
+	</div>
 
-  {% if page.help %}
-    {{ page.help }}
-  {% endif %}
+	{# Content Bottom Region #}
+	{% if page.content_bottom %}
+		<div class="content-bottom">
+		{{ page.content_bottom }}
+		</div>
+	{% endif %}
+</main>
 
-  <main id="main" class="l-content">
-    {# Link in html.html.twig. #}
-    <a id="main-content" tabindex="-1"></a>
-
-    {% if no_container | render %}
-      {{ page.content }}
-    {% else %}
-
-      <div class="l-content container-fluid">
-        <div class="l-content__inner">
-
-          {% if page.content_info %}
-            {{ page.content_info }}
-          {% endif %}
-
-          <div class="l-main-content-wrap row">
-
-            <div class="l-main-content {{ main_grid_classes }}">
-              {{ page.content }}
-            </div>
-
-            {# Only render the sidebar when there is a container. #}
-            {% if page.sidebar %}
-              <aside class="l-sidebar col-md-3 col-lg-4" role="complementary">
-                {{ page.sidebar }}
-              </aside>
-            {% endif %}
-
-          </div>
-        </div>
-      </div><!-- /.l-content -->
-    {% endif %}
-  </main>
-
-  {# Header include file. #}
-  {% include '@digital/partials/footer.html.twig' %}
-
-</div><!-- /.l-container -->
-
-{{ page.off_canvas }}

@@ -1,0 +1,97 @@
+/**
+ * Icon card component styling.
+ */
+ @use './node_modules/sass-rem'as rem;
+@import "../../global-includes";
+
+.icon {
+  &-cards {
+		padding-block-start: 3.5rem;
+		margin-block: rem.convert(50px);
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem.convert(24px);
+
+		.icon-card {
+			flex: 1 1 calc(33.33% - 16px);
+			transition: transform .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+			word-wrap: break-word;
+			border: 1px solid rgba(99, 102, 241, .35);
+			border-radius: 8px;
+			overflow: hidden;
+			cursor: pointer;
+
+			&:hover {
+				box-shadow: 0 .5rem 1.125rem -0.50rem rgba(92, 94, 225, 0.9);
+			}
+
+			&__wrappar {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			&__image {
+				img {
+					max-width: 100%;
+					width: 170px;
+					min-width: 170px;
+					height: auto;
+				}
+			}
+
+			&__body {
+				padding: 22px;
+
+				&-phone {
+					display: flex;
+					gap: 4px;
+					font-size: 1.25rem;
+					font-weight: 600;
+					color: $medium-gray;
+					margin-bottom: 8px;
+				}
+
+				h3 {
+					font-size: 1.125rem;
+					line-height: 1.4;
+					margin-bottom: 1rem;
+					color: $true-black;
+					font-weight: 600;
+				}
+
+				p {
+					font-size: 14px;
+					color: $black;
+					margin-bottom: 4px;
+				}
+
+				.btn {
+					border: none;
+					padding-inline: 0;
+					align-items: center;
+					display: flex;
+					gap: 4px;
+					font-size: 14px;
+					font-weight: 600;
+
+					&:hover {
+						background-color: unset;
+						border: none;
+						color: $primary-color;
+
+						svg {
+							fill: $primary-color;
+						}
+					}
+
+					svg {
+						width: 1rem;
+						height: 1rem;
+					}
+				}
+			}
+
+		}
+	}
+}

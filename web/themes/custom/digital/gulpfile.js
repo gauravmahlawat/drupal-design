@@ -237,8 +237,7 @@ const gulpWatchCSS = () => {
       ignoreInitial: false
     },
     series(
-      watchSCSS,
-      lintSCSS
+      watchSCSS
     )
   );
 }

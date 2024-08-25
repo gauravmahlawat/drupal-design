@@ -1,0 +1,73 @@
+/**
+ * Services component styling.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.services {
+  margin-block: 3.5rem;
+  -webkit-padding-before: 3.5rem;
+  padding-block-start: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.services-info {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 33.3%;
+  flex: 0 33.3%;
+}
+.services-info h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.services-info p {
+  color: #98928a;
+  margin: 0 0 1.5rem 0;
+}
+.services-card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 58.33%;
+  flex: 0 58.33%;
+  margin-left: 8%;
+}
+.services-card .icon-cards {
+  padding: 0;
+  margin: 0;
+}
+.services-card .icon-cards .icon-card__wrappar {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.services-card .icon-cards .icon-card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 calc(50% - 16px);
+  flex: 0 calc(50% - 16px);
+  background-color: #f4f6ff;
+  border: none;
+  padding: 24px;
+}
+.services-card .icon-cards .icon-card__image img {
+  max-width: 58px;
+  min-width: 58px;
+  background: #fff;
+  padding: 13px;
+  border-radius: 4px;
+}
+.services-card .icon-cards .icon-card__body {
+  padding-block: 0;
+}
+.services-card .icon-cards .icon-card__body p {
+  margin-bottom: 1rem;
+  color: #98928a;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.services-card .icon-cards .icon-card__body .btn {
+  background-color: transparent;
+}
+/*# sourceMappingURL=services.css.map */

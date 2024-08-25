@@ -12,7 +12,6 @@ abbr[title] {
   &:before {
     content: "Unpublished";
     font-size: rem.convert(100px);
-    color: $dark-red;
     position: relative;
     z-index: -10;
     width: 100%;

@@ -8,17 +8,9 @@ libraries:
   - digital/digital
 
 regions:
-  branding: 'Branding'
-  utility: 'Utility'
   main_menu: 'Main Navigation'
+  user_actions: 'User Actions'
   content_top: "Content Top"
-  help: "Help"
-  content_info: 'Content Info'
   content: 'Content'
-  sidebar: 'Sidebar'
   content_bottom: 'Content Bottom'
-  footer_upper: 'Footer Upper'
-  footer_lower: 'Footer Lower'
-  footer: 'Footer'
-  off_canvas: 'Off Canvas Menu'
   hidden: 'Hidden'
