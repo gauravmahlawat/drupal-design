@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/gauravmahlawat/drupal-design
 ```
   ```bash
-   cd dp-assignment
+   cd drupal-design
 ```
 
 2. **Start Ddev**
