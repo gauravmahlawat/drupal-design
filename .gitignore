@@ -27,7 +27,9 @@ yarn-error.log*
 /web/sites/development.services.yml
 /web/sites/example.settings.local.php
 /web/sites/example.sites.php
-/web/sites/default/files/
+/web/sites/default/files/2024-08/
+/web/sites/default/files/php/
+/web/sites/default/files/sync/
 /web/sites/simpletest
 /web/modules/contrib/
 /web/profiles/README.txt
