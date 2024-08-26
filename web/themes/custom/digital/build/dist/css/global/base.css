@@ -382,6 +382,22 @@ body.dark-mode {
   -webkit-filter: invert(1) hue-rotate(180deg);
   filter: invert(1) hue-rotate(180deg);
 }
+body.dark-mode img {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+}
+body.dark-mode .main-navigation img {
+  -webkit-filter: unset;
+  filter: unset;
+}
+body.dark-mode .iframe-gradient svg {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+}
+body.dark-mode .iframe-gradient::before {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+}
 
 .container {
   max-width: 1290px;

@@ -18,6 +18,25 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: $black;
     filter: invert(1) hue-rotate(180deg);
+
+    img {
+      filter: invert(1) hue-rotate(180deg)
+    }
+
+    .main-navigation {
+      img {
+        filter: unset;
+      }
+    }
+
+    .iframe-gradient {
+      svg {
+        filter: invert(1) hue-rotate(180deg)
+      }
+      &::before {
+        filter: invert(1) hue-rotate(180deg)
+      }
+    }
   }
 }
 
