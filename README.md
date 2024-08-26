@@ -1,6 +1,6 @@
 # Project Setup with Ddev
 
-This guide provides instructions for setting up a Drupal project using Ddev and running Gulp within the theme directory.
+This guide provides instructions for setting up the project using Ddev and running Gulp within the theme directory.
 
 ## Table of Contents
 
@@ -22,62 +22,83 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Project Repository**
 
+  ```bash
    git clone https://github.com/gauravmahlawat/drupal-design
-   cd dp-assignment
+```
+  ```bash
+   cd drupal-design
+```
 
 2. **Start Ddev**
 
    Initialize and start the Ddev environment:
-
+  ```bash
    ddev start
+```
 
 3. **Install Drupal Dependencies**
 
    Access the Drupal container and install the required dependencies:
 
+  ```bash
    ddev ssh
+```
+  ```bash
    composer install
+```
 
-4. **Import Database (if applicable)**
+4. **Import Database**
 
-   If you have a database dump, import it using:
-
+Import it using:
+  ```bash
    drush sql-cli < digital.sql
+```
 
 
 ## Running Gulp
 
 1. **Navigate to the Theme Directory**
 
+  ```bash
    cd web/themes/custom/digital
+```
 
 2. **Install Gulp Dependencies**
 
-   Ensure you have all the required Gulp dependencies installed:
+Ensure you have all the required Gulp dependencies installed:
+node: 16.20.1
+npm: 8.19.4
 
+  ```bash
    npm install
+```
 
 3. **Run Gulp**
 
    Start the Gulp tasks:
 
+  ```bash
    npm run gulp
+```
 
    or 
 
+  ```bash
    gulp
+```
 
    or 
-
+  ```bash
    gulp watch
+```
 
 ## Performance and Core Web Vitals
 
-To ensure your Drupal site performs well and meets core web vitals, review the following:
+The site has good performance and passes the core web vitals. Attached is the performance report audit. Accessibility scores 92, primarily due to a color contrast issue, which is a design problem.
 
 - **Performance Screenshot**
 
-  ![Performance Screenshot](path/to/performance-screenshot.png)
+  <img src="https://github.com/gauravmahlawat/drupal-design/blob/main/lighthouse.png">
 
 ## Troubleshooting
 
