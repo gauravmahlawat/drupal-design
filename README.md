@@ -77,7 +77,7 @@ To ensure your Drupal site performs well and meets core web vitals, review the f
 
 - **Performance Screenshot**
 
-  ![Performance Screenshot](path/to/performance-screenshot.png)
+  <img src="https://github.com/gauravmahlawat/drupal-design/blob/main/lighthouse.png">
 
 ## Troubleshooting
 
