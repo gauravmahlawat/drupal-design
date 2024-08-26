@@ -52,9 +52,9 @@
 
 				img {
 					max-width: 100%;
-					border-radius: 8px;
+					border-radius: rem.convert(8px);
 					height: auto;
-					background-color: #f5f5ff;
+					background-color: $off-white-blue;
 				}
 			}
 		}

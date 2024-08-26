@@ -1,33 +1,23 @@
 $font-sans: sans-serif;
 
-// Gray tones.
+
 $true-black: #000;
 $black: #212121;
-$charcoal: #404040;
-$dark-gray: #6f6f6f;
 $medium-gray: #98928a;
-$gray: #b7b7b7;
-$light-gray: #dadada;
-$x-light-gray: #f8f6f3;
-$pale-gray: #eee;
-$off-white: #f5f5f5;
 $white: #fff;
-
-// Core colors.
 $primary-color: #6466f1;
 $primary-color-100: #6366f1;
 $primary-color-50: #f4f6ff;
+$primary-color-00: #f3f6ff;
+$off-white-blue: #f5f5ff;
 $secondary-color: #22c55d;
-$green: #69cec3;
+$light-periwinkle: #e3e5f1;
 
 // For usage with the container mixin.
 $small_desktop: 1024px;
 $desktop: 1280px;
 
 // Breakpoints.
-// https://app.zeplin.io/project/5e6682f618ae0f143906fcd7/screen/5e66aa6445b013115f8e1a8e
-// Note, $mobile, $small_desktop, and $desktop mirror the names that are in the designs.
-// Map for sass MQ.
 $breakpoints: (
   small: 0,
   mobile: 375px,
@@ -44,9 +34,3 @@ $breakpoints: (
 //$mq-show-breakpoints: (small, mobile, small_plus, medium, medium-large, small_desktop, desktop, x_wide);
 
 $a-tags-hover: '&:active, &:focus, &:hover ';
-
-// Form varaibles.
-$md-radio-border-color: rgba(0, 0, 0, 0.6);
-$md-radio-size: 30px;
-$md-radio-checked-size: 15px;
-$md-radio-ripple-size: 15px;

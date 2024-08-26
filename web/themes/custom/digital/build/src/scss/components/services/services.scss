@@ -42,15 +42,15 @@
 				flex: 0 calc(50% - 16px);
 				background-color: $primary-color-50;
 				border: none;
-				padding: 24px;
+				padding: rem.convert(24px);
 
 				&__image {
 					img {
-						max-width: 58px;
-						min-width: 58px;
+						max-width: rem.convert(58px);
+						min-width: rem.convert(58px);
 						background: $white;
-						padding: 13px;
-						border-radius: 4px;
+						padding: rem.convert(13px);
+						border-radius: rem.convert(4px);
 					}
 				}
 
@@ -60,7 +60,7 @@
 					p {
 						margin-bottom: 1rem;
 						color: $medium-gray;
-						font-size: 16px;
+						font-size: rem.convert(16px);
 						line-height: 1.2;
 					}
 

@@ -21,16 +21,16 @@
 		justify-content: center;
 		align-items: center;
 		background-color: $white;
-		height: 40px;
-		width: 40px;
+		height: rem.convert(40px);
+		width: rem.convert(40px);
 		border-radius: 50%;
 		box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
 
 		svg {
 			fill: $black;
-			width: 18px;
-			height: 18px;
-			margin-left: 5px;
+			width: rem.convert(18px);
+			height: rem.convert(18px);
+			margin-left: rem.convert(5px);
 		}
 
 		&.slick-prev {
@@ -41,7 +41,7 @@
 			right: 0;
 			svg {
 				transform: rotate(180deg);
-				margin-left: -5px;
+				margin-left: rem.convert(-5px);
 			}
 		}
 
@@ -52,19 +52,19 @@
 
 	.slick-dots {
 		li {
-			margin: 0 5px;
+			margin: 0 rem.convert(5px);
 			padding: 0;
-			width: 5px;
-			height: 5px;
+			width: rem.convert(5px);
+			height: rem.convert(5px);
 
 			button {
 				padding: 0;
-				width: 5px;
-				height: 5px;
+				width: rem.convert(5px);
+				height: rem.convert(5px);
 
 				&::before {
-					width: 5px;
-					height: 5px;
+					width: rem.convert(5px);
+					height: rem.convert(5px);
 					line-height: unset;
 					content: "";
 					background: $medium-gray;
@@ -73,14 +73,14 @@
 			}
 
 			&.slick-active {
-				width: 24px;
+				width: rem.convert(24px);
 
 				button {
-					width: 24px;
+					width: rem.convert(24px);
 
 					&::before {
-						border-radius: 3px;
-						width: 24px;
+						border-radius: rem.convert(3px);
+						width: rem.convert(24px);
 						background-color: $primary-color;
 						opacity: 1;
 					}
@@ -90,14 +90,14 @@
 	}
 
 	.news-cards {
-		padding-inline: 50px;
+		padding-inline: rem.convert(50px);
 
 		.news-card {
-			border-radius: 8px;
+			border-radius: rem.convert(8px);
 			overflow: hidden;
 			box-shadow: 0 .275rem .75rem -0.0625rem rgba(11,15,25,.06),0 .125rem .4rem -0.0625rem rgba(11,15,25,.03);
 			margin-block: 0 1rem;
-			margin-inline: 7px;
+			margin-inline: rem.convert(7px);
 		}
 	}
 
@@ -113,14 +113,14 @@
 		}
 
 		&-tag {
-			margin: 0 0 12px 0;
+			margin: 0 0 rem.convert(12px) 0;
 			a {
 				text-decoration: none;
-				background-color: #f3f6ff;
+				background-color: $primary-color-00;
 				color: $black;
-				padding: 2px 4px;
-				font-size: 14px;
-				border-radius: 4px;
+				padding: rem.convert(2px) rem.convert(4px);
+				font-size: rem.convert(14px);
+				border-radius: rem.convert(4px);
 			}
 		}
 
@@ -131,36 +131,36 @@
 			margin: 0;
 			font-weight: 600;
 			padding-bottom: 1rem;
-			border-bottom: 1px solid #e3e5f1;
+			border-bottom: 1px solid $light-periwinkle;
 		}
 
 		.doctor-profile__card {
 			display: flex;
 			align-items: center;
-			gap: 12px;
+			gap: rem.convert(12px);
 			margin-top: 1.5rem;
 			padding-inline-start: 1rem;
 
 			img {
-				width: 48px;
-				height: 48px;
-				border-radius: 4px;
+				width: rem.convert(48px);
+				height: rem.convert(48px);
+				border-radius: rem.convert(4px);
 			}
 
 			&-info {
 				display: grid;
 
 				h3 {
-					font-size: 14px;
+					font-size: rem.convert(14px);
 					font-weight: 700;
-					line-height: 18px;
+					line-height: rem.convert(18px);
 					color: $black;
-					margin: 0 0 6px 0;
+					margin: 0 0 rem.convert(6px) 0;
 				}
 
 				p {
 					margin: 0;
-					font-size: 12px;
+					font-size: rem.convert(12px);
 					color: $medium-gray;
 				}
 			}

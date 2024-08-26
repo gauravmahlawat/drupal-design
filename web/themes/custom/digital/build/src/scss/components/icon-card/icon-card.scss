@@ -13,11 +13,11 @@
 		gap: rem.convert(24px);
 
 		.icon-card {
-			flex: 1 1 calc(33.33% - 16px);
+			flex: 1 1 calc(33.33% - 1rem);
 			transition: transform .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
 			word-wrap: break-word;
 			border: 1px solid rgba(99, 102, 241, .35);
-			border-radius: 8px;
+			border-radius: rem.convert(8px);;
 			overflow: hidden;
 			cursor: pointer;
 
@@ -34,22 +34,22 @@
 			&__image {
 				img {
 					max-width: 100%;
-					width: 170px;
-					min-width: 170px;
+					width: rem.convert(170px);
+					min-width: rem.convert(170px);
 					height: auto;
 				}
 			}
 
 			&__body {
-				padding: 22px;
+				padding: rem.convert(22px);
 
 				&-phone {
 					display: flex;
-					gap: 4px;
+					gap: rem.convert(4px);
 					font-size: 1.25rem;
 					font-weight: 600;
 					color: $medium-gray;
-					margin-bottom: 8px;
+					margin-block-end: rem.convert(8px);
 				}
 
 				h3 {
@@ -61,9 +61,9 @@
 				}
 
 				p {
-					font-size: 14px;
+					font-size: rem.convert(14px);
 					color: $black;
-					margin-bottom: 4px;
+					margin-bottom: rem.convert(4px);
 				}
 
 				.btn {
@@ -71,8 +71,8 @@
 					padding-inline: 0;
 					align-items: center;
 					display: flex;
-					gap: 4px;
-					font-size: 14px;
+					gap: rem.convert(4px);
+					font-size: rem.convert(14px);
 					font-weight: 600;
 					background-color: transparent;
 

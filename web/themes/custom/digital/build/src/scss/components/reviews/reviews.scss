@@ -7,7 +7,7 @@
 .all-reviews {
 	margin-block: 3.125rem;
 	padding-block: 3.5rem;
-	background-color: #f4f6ff;
+	background-color: $primary-color-50;
 
 	&__title {
 		font-size: 2.5rem;
@@ -28,51 +28,51 @@
 		flex: 0 calc(16.667% - 20px);
 
 		&__body {
-			padding: 24px;
+			padding: rem.convert(24px);
 			background-color: $white;
-			border-radius: 8px;
+			border-radius: rem.convert(8px);
 			color: $medium-gray;
 			position: relative;
 
 			svg {
 				position: absolute;
-				top: -25px;
+				top: rem.convert(-25px);
 				transform: rotate(180deg);
 				background: $primary-color;
-				width: 50px;
-				height: 50px;
-				border-radius: 8px;
-				padding: 10px;
+				width: rem.convert(50px);
+				height: rem.convert(50px);
+				border-radius: rem.convert(8px);
+				padding: rem.convert(10px);
 			}
 		}
 
 		.doctor-profile__card {
 			display: flex;
 			align-items: center;
-			gap: 12px;
+			gap: rem.convert(12px);
 			margin-top: 1.5rem;
 			padding-inline-start: 1rem;
 
 			img {
-				width: 48px;
-				height: 48px;
-				border-radius: 4px;
+				width: rem.convert(48px);
+				height: rem.convert(48px);
+				border-radius: rem.convert(4px);
 			}
 
 			&-info {
 				display: grid;
 
 				h3 {
-					font-size: 14px;
+					font-size: rem.convert(14px);
 					font-weight: 700;
-					line-height: 18px;
+					line-height: rem.convert(18px);
 					color: $black;
-					margin: 0 0 6px 0;
+					margin: 0 0 rem.convert(6px) 0;
 				}
 
 				p {
 					margin: 0;
-					font-size: 12px;
+					font-size: rem.convert(12px);
 					color: $medium-gray;
 				}
 			}

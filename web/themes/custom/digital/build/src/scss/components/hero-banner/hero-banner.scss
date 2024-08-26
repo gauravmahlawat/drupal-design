@@ -47,7 +47,7 @@
 
 	.left-container {
 		img {
-			max-width: calc(100% - 32px);
+			max-width: calc(100% - rem.convert(32px));
 			height: auto;
 			object-fit: cover;
 		}
@@ -64,7 +64,7 @@
 			padding: 3.5rem;
 			background-color: $primary-color;
 			border-radius: rem.convert(8px);
-			margin-left: -180px;
+			margin-left: rem.convert(-180px);;
 			max-width: 80%;
 			z-index: 2;
 			position: relative;
@@ -105,7 +105,7 @@
 			min-width: 50vw;
 			max-width: 100%;
 			border-radius: 0;
-			border-bottom-left-radius: 8px;
+			border-bottom-left-radius: rem.convert(8px);;
 			position: absolute;
 			top: 0;
 			z-index: -1;

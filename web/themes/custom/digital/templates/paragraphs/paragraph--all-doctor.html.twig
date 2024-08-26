@@ -17,6 +17,10 @@
  *   or print a subset such as {{ content.field_example }}. Use
  *   {{ content|without('field_example') }} to temporarily suppress the printing
  *   of a given child element.
+ *   Available fields in this template:
+ *   - content.field_title: The title field of the paragraph.
+ *   - content.field_feature_box_cta: The call-to-action link field in the feature box.
+ *   - content.field_doctor_profile: The doctor profile field.
  * - attributes: HTML attributes for the containing element.
  *   The attributes.class element may contain one or more of the following
  *   classes:
@@ -32,6 +36,8 @@
  *   current user is a logged-in member.
  * - is_admin: Flag for admin user status. Will be true when the current user
  *   is an administrator.
+ * - button_text: The text for the call-to-action button.
+ * - button_url: The URL for the call-to-action button.
  *
  * @see template_preprocess_paragraph()
  *

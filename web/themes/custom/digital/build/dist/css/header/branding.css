@@ -1,11 +1,1 @@
-/**
- * Branding component styling.
- */
-/* stylelint-disable */
-/* stylelint-enable */
-.site-header img {
-  width: 11.25rem;
-  max-width: 11.25rem;
-  height: auto;
-}
-/*# sourceMappingURL=branding.css.map */
+.site-header img{width:11.25rem;max-width:11.25rem;height:auto}
