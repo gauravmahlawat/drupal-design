@@ -49,6 +49,7 @@
 		img {
 			max-width: calc(100% - 32px);
 			height: auto;
+			object-fit: cover;
 		}
 
 		p {
@@ -73,6 +74,7 @@
 				line-height: 1.2;
 				margin-bottom: 1rem;
 				color: $white;
+				font-weight: 600;
 			}
 
 			p {
@@ -108,6 +110,7 @@
 			top: 0;
 			z-index: -1;
 			margin: -12rem calc(50% - 50vw) 0 0;
+			object-fit: cover;
 		}
 	}
 }

@@ -38,12 +38,12 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('digital/iframe-video')}}
+{{ attach_library('digital/specialist')}}
 {%
   set classes = [
     'paragraph',
     'container',
-    'iframe-video',
+    'our-specialist',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
@@ -52,26 +52,28 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+
+    <div class="our-specialist__header">
       {% if content.field_title.0 %}
-        <h2>{{ content.field_title.0 }}</h3>
+          <h2>{{ content.field_title.0 }}</h2>
       {% endif %}
 
-      {% if content.field_subtitle.0 %}
-        <p class="iframe-video__subtitle muted">{{ content.field_subtitle.0 }}</p>
+      {% if content.field_feature_box_cta %}
+        {% set button_text = content.field_feature_box_cta[0]['#title'] %}
+        {% set button_url = content.field_feature_box_cta[0]['#url'] %}
+        <a class="btn btn-tertiary btn-primary btn-small" href="{{ button_url }}">
+        {{ button_text }}
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6466f1">
+            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+        </svg>
+        </a>
       {% endif %}
+    </div>
 
-      {% if content.field_youtube_url %}
-        <div class="iframe-video__iframe">
-            {% set button_url = content.field_youtube_url[0]['#url'] %}
-            <iframe title="YouTube video: Video Title"  muted allow="autoplay" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" src="{{ button_url }}"></iframe>
-            <div class="iframe-gradient">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#33354d">
-                <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/>
-              </svg>
-            </div>
-        </div>
+      {% if content.field_doctor_profile %}
+        {{ content.field_doctor_profile }}
       {% endif %}
-
+      
     {% endblock %}
   </div>
 {% endblock paragraph %}

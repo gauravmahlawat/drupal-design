@@ -1,0 +1,169 @@
+/**
+ * News component styling.
+ */
+ @use './node_modules/sass-rem'as rem;
+@import "../../global-includes";
+
+.latest-news {
+	margin-block: 3.125rem;
+	padding-block: 3.5rem;
+
+	h2 {
+		font-size: 2.5rem;
+		line-height: 1.2;
+		margin-bottom: 2rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.slick-arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $white;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+
+		svg {
+			fill: $black;
+			width: 18px;
+			height: 18px;
+			margin-left: 5px;
+		}
+
+		&.slick-prev {
+			left: 0;
+		}
+
+		&.slick-next {
+			right: 0;
+			svg {
+				transform: rotate(180deg);
+				margin-left: -5px;
+			}
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+
+	.slick-dots {
+		li {
+			margin: 0 5px;
+			padding: 0;
+			width: 5px;
+			height: 5px;
+
+			button {
+				padding: 0;
+				width: 5px;
+				height: 5px;
+
+				&::before {
+					width: 5px;
+					height: 5px;
+					line-height: unset;
+					content: "";
+					background: $medium-gray;
+					border-radius: 50%;
+				}
+			}
+
+			&.slick-active {
+				width: 24px;
+
+				button {
+					width: 24px;
+
+					&::before {
+						border-radius: 3px;
+						width: 24px;
+						background-color: $primary-color;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.news-cards {
+		padding-inline: 50px;
+
+		.news-card {
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 .275rem .75rem -0.0625rem rgba(11,15,25,.06),0 .125rem .4rem -0.0625rem rgba(11,15,25,.03);
+			margin-block: 0 1rem;
+			margin-inline: 7px;
+		}
+	}
+
+	&__card {
+		&-image {
+			img {
+				height: auto;
+			}
+		}
+
+		&-content {
+			padding: 1.5rem;
+		}
+
+		&-tag {
+			margin: 0 0 12px 0;
+			a {
+				text-decoration: none;
+				background-color: #f3f6ff;
+				color: $black;
+				padding: 2px 4px;
+				font-size: 14px;
+				border-radius: 4px;
+			}
+		}
+
+		&-title {
+			font-size: 1.25rem;
+			line-height: 1.4;
+			color: $black;
+			margin: 0;
+			font-weight: 600;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #e3e5f1;
+		}
+
+		.doctor-profile__card {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-top: 1.5rem;
+			padding-inline-start: 1rem;
+
+			img {
+				width: 48px;
+				height: 48px;
+				border-radius: 4px;
+			}
+
+			&-info {
+				display: grid;
+
+				h3 {
+					font-size: 14px;
+					font-weight: 700;
+					line-height: 18px;
+					color: $black;
+					margin: 0 0 6px 0;
+				}
+
+				p {
+					margin: 0;
+					font-size: 12px;
+					color: $medium-gray;
+				}
+			}
+		}
+	}
+}

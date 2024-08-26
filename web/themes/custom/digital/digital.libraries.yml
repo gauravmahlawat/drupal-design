@@ -45,3 +45,50 @@ services:
   css:
     base:
       build/dist/css/components/services/services.css: { }
+
+specialist:
+  css:
+    base:
+      build/dist/css/components/specialist/specialist.css: { }
+
+reviews:
+  css:
+    base:
+      build/dist/css/components/reviews/reviews.css: { }
+
+news:
+  css:
+    base:
+      build/dist/css/components/news/news.css: { }
+
+  js:
+    build/dist/js/news-slider.js: { }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - digital/slick
+
+featured-articles:
+  css:
+    base:
+      build/dist/css/components/featured-articles/featured-articles.css: { }
+
+  js:
+    build/dist/js/cta-carousel.js: { }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - digital/slick
+
+
+slick:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: {external, defer: true}
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: {external, defer: true}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {external, defer: true}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

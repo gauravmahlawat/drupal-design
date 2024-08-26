@@ -37,6 +37,20 @@ input[type=submit] {
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+a.btn svg,
+.btn svg,
+input[type=file] svg,
+input[type=submit] svg {
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 a.btn:active,
 a.btn:focus,
@@ -81,9 +95,8 @@ a.btn.btn-secondary,
 input[type=file].btn-secondary,
 input[type=submit].btn-secondary {
   background-color: #22c55d;
-  color: #212121;
+  color: #fff;
   border: 2px solid #22c55d;
-  border-radius: 22px;
 }
 a.btn.btn-secondary:active,
 a.btn.btn-secondary:focus,

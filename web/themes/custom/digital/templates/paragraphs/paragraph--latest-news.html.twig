@@ -38,12 +38,10 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('digital/iframe-video')}}
 {%
   set classes = [
     'paragraph',
-    'container',
-    'iframe-video',
+    'latest-news__card',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
@@ -52,26 +50,26 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {% if content.field_title.0 %}
-        <h2>{{ content.field_title.0 }}</h3>
+      {% if content.field_left_image %}
+        <div class="latest-news__card-image">
+          {{ content.field_left_image }}
+        </div>
       {% endif %}
-
-      {% if content.field_subtitle.0 %}
-        <p class="iframe-video__subtitle muted">{{ content.field_subtitle.0 }}</p>
-      {% endif %}
-
-      {% if content.field_youtube_url %}
-        <div class="iframe-video__iframe">
-            {% set button_url = content.field_youtube_url[0]['#url'] %}
-            <iframe title="YouTube video: Video Title"  muted allow="autoplay" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" src="{{ button_url }}"></iframe>
-            <div class="iframe-gradient">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#33354d">
-                <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/>
-              </svg>
-            </div>
+    <div class="latest-news__card-content">
+      {% if content.field_tag %}
+        <div class="latest-news__card-tag">
+          {{ content.field_tag }}
         </div>
       {% endif %}
 
+      {% if content.field_title %}
+        <h3 class="latest-news__card-title">{{ content.field_title.0 }}</h3>
+      {% endif %}
+
+      {% if content.field_profiles %}
+        {{ content.field_profiles }}
+      {% endif %}
+    </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

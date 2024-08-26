@@ -1,0 +1,155 @@
+/**
+ * News component styling.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.latest-news {
+  margin-block: 3.125rem;
+  padding-block: 3.5rem;
+}
+.latest-news h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.latest-news .slick-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+}
+.latest-news .slick-arrow svg {
+  fill: #212121;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+.latest-news .slick-arrow.slick-prev {
+  left: 0;
+}
+.latest-news .slick-arrow.slick-next {
+  right: 0;
+}
+.latest-news .slick-arrow.slick-next svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-left: -5px;
+}
+.latest-news .slick-arrow::before {
+  display: none;
+}
+.latest-news .slick-dots li {
+  margin: 0 5px;
+  padding: 0;
+  width: 5px;
+  height: 5px;
+}
+.latest-news .slick-dots li button {
+  padding: 0;
+  width: 5px;
+  height: 5px;
+}
+.latest-news .slick-dots li button::before {
+  width: 5px;
+  height: 5px;
+  line-height: unset;
+  content: "";
+  background: #98928a;
+  border-radius: 50%;
+}
+.latest-news .slick-dots li.slick-active {
+  width: 24px;
+}
+.latest-news .slick-dots li.slick-active button {
+  width: 24px;
+}
+.latest-news .slick-dots li.slick-active button::before {
+  border-radius: 3px;
+  width: 24px;
+  background-color: #6466f1;
+  opacity: 1;
+}
+.latest-news .news-cards {
+  padding-inline: 50px;
+}
+.latest-news .news-cards .news-card {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+  margin-block: 0 1rem;
+  margin-inline: 7px;
+}
+.latest-news__card-image img {
+  height: auto;
+}
+.latest-news__card-content {
+  padding: 1.5rem;
+}
+.latest-news__card-tag {
+  margin: 0 0 12px 0;
+}
+.latest-news__card-tag a {
+  text-decoration: none;
+  background-color: #f3f6ff;
+  color: #212121;
+  padding: 2px 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.latest-news__card-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #212121;
+  margin: 0;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e3e5f1;
+}
+.latest-news__card .doctor-profile__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+  -webkit-padding-start: 1rem;
+  padding-inline-start: 1rem;
+}
+.latest-news__card .doctor-profile__card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+.latest-news__card .doctor-profile__card-info {
+  display: grid;
+}
+.latest-news__card .doctor-profile__card-info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #212121;
+  margin: 0 0 6px 0;
+}
+.latest-news__card .doctor-profile__card-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #98928a;
+}
+/*# sourceMappingURL=news.css.map */
