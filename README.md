@@ -54,6 +54,8 @@ Import it using:
    drush sql-cli < digital.sql
 ```
 
+5. **Site snapshot**
+<img src="https://github.com/gauravmahlawat/drupal-design/blob/main/homepage.png">
 
 ## Running Gulp
 
